@@ -1,0 +1,16 @@
+<div class="container pb-5">
+  <form class="form-inline">
+    <div class="form-group mb-2">
+      <label for="staticEmail2" class="sr-only">Property</label>
+      <input type="text" [(ngModel)]="prop" required name="prop" class="form-control" id="staticEmail2"
+        placeholder="Property">
+    </div>
+    <button (click)="addProperty(prop)" class="btn btn-primary mb-2">Add</button>
+  </form>
+
+  <ul class="list-group">
+    <ng-container *ngFor="let item of list;">
+      <li class="list-group-item">{{ item }}</li>
+    </ng-container>
+  </ul>
+</div>

@@ -1,0 +1,21 @@
+<div class="border border-dark" #el>
+  <div class="mb-5">
+    <h2 class="text-center">Vehicles</h2>
+    <div class="justify-content-center d-flex">
+      <app-manage-list [list]="vehicleProp" (updatedList)="onListUpdate($event)"></app-manage-list>
+    </div>
+  </div>
+  <div class="d-flex w-100">
+
+    <div class="p-0">
+
+      <!-- Child Level-1 -->
+      <app-with-tires [vehicleProp]="vehicleProp"></app-with-tires>
+    </div>
+    <div class="p-0">
+
+      <!-- Child Level-1 -->
+      <app-with-wings [vehicleProp]="vehicleProp"></app-with-wings>
+    </div>
+  </div>
+</div>

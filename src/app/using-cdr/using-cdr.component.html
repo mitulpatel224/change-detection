@@ -1,0 +1,10 @@
+<div class="container" #el>
+  <h2 class="text-center my-5">{{ timer }}</h2>
+  <div class="d-flex justify-content-between my-5">
+    <button class="btn " [ngClass]="{'btn-danger': !cdrConf?.isDetached,'btn-secondary': cdrConf?.isDetached}"
+      (click)="detach()">DETACH</button>
+    <button class="btn btn-warning" (click)="reatach()">RE ATTACH</button>
+    <button class="btn btn-primary" (click)="markForCheck()">MARK FOR CHECK</button>
+    <button class="btn btn-success" (click)="detectChanges()">DETECT CHANGES</button>
+  </div>
+</div>

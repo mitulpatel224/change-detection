@@ -1,0 +1,6 @@
+<div class="container" #el>
+  <h2 class="text-center">Bikes</h2>
+  <div class="justify-content-center d-flex">
+    <app-manage-list [list]="list" (updatedList)="onListUpdate($event)"></app-manage-list>
+  </div>
+</div>

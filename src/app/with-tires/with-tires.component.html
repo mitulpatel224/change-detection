@@ -1,0 +1,21 @@
+<div class="border border-dark" #el>
+  <div class="mb-5">
+    <h2 class="text-center">Vehicles on Road</h2>
+    <div class="justify-content-center d-flex">
+      <app-manage-list [list]="list" (updatedList)="onListUpdate($event)"></app-manage-list>
+    </div>
+  </div>
+  <div class="d-flex">
+
+    <div class="p-0 border border-dark">
+
+      <!-- Child Level-2 -->
+      <app-bike [vehicleProp]="list"></app-bike>
+    </div>
+    <div class="p-0 border border-dark">
+
+      <!-- Child Level-2 -->
+      <app-car [vehicleProp]="list"></app-car>
+    </div>
+  </div>
+</div>
